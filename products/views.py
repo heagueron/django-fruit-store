@@ -5,15 +5,13 @@ from .models import Product
 
 
 def index(request):
-    #return HttpResponse('Epa bro!')
     objects = Product.objects.all()
     context = {
-       'products'  : objects
+       'products': objects
     }
     return render(request, 'index.html', context)
 
 
-
 def add_product(request):
-    return HttpResponse('Add a product!')
+    return HttpResponse('Add a product ... under construction. Come later')
 
